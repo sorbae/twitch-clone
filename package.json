@@ -1,0 +1,19 @@
+{
+  "name": "twitch-clone",
+  "version": "1.0.0",
+  "description": "Desktop twitch clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorbae/twitch-clone.git"
+  },
+  "author": "Phoebe Mei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorbae/twitch-clone/issues"
+  },
+  "homepage": "https://github.com/sorbae/twitch-clone#readme"
+}
