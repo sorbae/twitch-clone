@@ -4,7 +4,7 @@
   "description": "Desktop twitch clone",
   "main": "index.js",
   "scripts": {
-    "test": "electron-mocha -R spec --compilers js:babel-register --renderer tests/"
+    "test": "electron-mocha -R spec --compilers js:babel-register tests/"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-airbnb": "^2.4.0",
     "babel-preset-env": "^1.6.1",
+    "electron": "^1.7.10",
     "nodemon": "^1.14.11"
   },
   "devDependencies": {
