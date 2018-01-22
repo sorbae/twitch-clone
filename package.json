@@ -23,10 +23,10 @@
     "nodemon": "^1.14.11"
   },
   "devDependencies": {
-      "babel": {
-        "presets": [
-          "env"
-        ]
-      },
+    "babel": {
+      "presets": [
+        "env"
+      ]
     }
+  }
 }
