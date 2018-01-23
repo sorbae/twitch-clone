@@ -12,8 +12,6 @@ cache:
   directories:
   - node_modules
 after_success:
-  - rm -R twitch-clone-darwin-x64
-  - electron packager .
   - curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
   - chmod a+x /tmp/travis-automerge
   - BRANCHES_TO_MERGE_REGEX='^f/' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=sorbae/twitch-clone
