@@ -4,7 +4,8 @@
   "description": "Desktop twitch clone",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/test.js"
+    "test": "mocha --require babel-core/register tests/",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/sorbae/twitch-clone/issues"
   },
-  "homepage": "https://github.com/sorbae/twitch-clone#readme"
+  "homepage": "https://github.com/sorbae/twitch-clone#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-env": "^1.6.1",
+    "electron": "1.7.10"
+  },
+  "devDependencies": {
+    "babel": {
+      "presets": [
+        "env"
+      ]
+    },
+    "chai": "^4.1.2",
+    "electron-packager": "^10.1.1",
+    "electron-prebuilt-compile": "^1.8.2-beta.3",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.11",
+    "spectron": "^3.7.2"
+  }
 }
