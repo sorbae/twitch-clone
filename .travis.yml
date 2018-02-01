@@ -16,6 +16,7 @@ after_success:
   - chmod a+x /tmp/travis-automerge
   - BRANCHES_TO_MERGE_REGEX='^f/' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=sorbae/twitch-clone
     /tmp/travis-automerge
+  - ./temp/travis-automerge
 notifications:
   email: false
   slack:
