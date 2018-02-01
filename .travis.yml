@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '8'
+- '8'
 branches:
   only:
   - development
@@ -12,7 +12,8 @@ cache:
   directories:
   - node_modules
 after_success:
-  - automerge.sh
+  - chmod +x automerge.sh
+  - ./automerge.sh
 notifications:
   email: false
   slack:
