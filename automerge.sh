@@ -18,8 +18,8 @@ git clone "https://github.com/sorbae/twitch-clone" "$repo_temp"
 # shellcheck disable=SC2164
 cd "$repo_temp"
 
-# printf 'Checking out %s\n' "master" >&2
-# git checkout master
+printf 'Checking out %s\n' "master" >&2
+git checkout master
 
 printf 'Merging %s\n' "$TRAVIS_COMMIT" >&2
 git merge --ff-only "$TRAVIS_COMMIT"
