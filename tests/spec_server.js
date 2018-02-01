@@ -8,7 +8,8 @@ describe('Electron', function () {
   describe('application launch', function () {
     beforeEach(function () {
       this.app = new Application({
-        path: path.join(__dirname, '../twitch-clone-darwin-x64/twitch-clone.app/Contents/MacOS/twitch-clone')
+        path: path.join(__dirname, '..', 'node_modules', '.bin', 'electron'),
+        args: [path.join(__dirname, '..')]
       })
       return this.app.start()
     })
@@ -21,7 +22,7 @@ describe('Electron', function () {
 
     it('shows an initial window', function () {
       return this.app.client.getWindowCount()
-        .then(count => assert.equal(count, 2))
+        .then(count => assert.equal(count, 1))
     })
   })
 })

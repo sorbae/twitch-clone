@@ -4,7 +4,7 @@
   "description": "Desktop twitch clone",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec --compilers js:babel-register tests/",
+    "test": "mocha --require babel-core/register tests/",
     "start": "electron ."
   },
   "repository": {
