@@ -22,7 +22,7 @@ printf 'Checking out %s\n' "master" >&2
 git checkout origin master
 
 printf 'Merging %s\n' "$TRAVIS_COMMIT" >&2
-git merge --ff "$TRAVIS_COMMIT"
+git merge "$TRAVIS_COMMIT"
 
 printf 'Pushing to %s\n' "sorbae/twitch-clone" >&2
 
