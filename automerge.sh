@@ -19,7 +19,7 @@ git clone "https://github.com/sorbae/twitch-clone" "$repo_temp"
 cd "$repo_temp"
 
 printf 'Checking out %s\n' "master" >&2
-git checkout origin master
+git checkout master
 
 printf 'Merging %s\n' "$TRAVIS_COMMIT" >&2
 git merge "$TRAVIS_COMMIT"
